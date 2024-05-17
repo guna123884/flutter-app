@@ -21,7 +21,7 @@ jobs:
           java-version: "11.x" # specify a version that is available
       - uses: subosito/flutter-action@v2 # update to v2 to use Node.js 20
         with:
-          flutter-version: "2.2.0"
+          flutter-version: "2.10.0" # specify a more recent version
       - run: flutter pub get
       - run: flutter test
       - run: flutter build apk --debug --split-per-abi
