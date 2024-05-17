@@ -21,7 +21,7 @@ jobs:
           java-version: "11.x" # specify a version that is available
       - uses: subosito/flutter-action@v2 # update to v2 to use Node.js 20
         with:
-          flutter-version: "3.13.0" # specify a version that includes Dart >= 3.3.4
+          flutter-version: "3.13.2" # specify a version that includes Dart >= 3.3.4
       - run: flutter pub get
       - run: flutter test
       - run: flutter build apk --debug --split-per-abi
