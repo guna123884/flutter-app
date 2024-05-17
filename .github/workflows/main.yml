@@ -18,8 +18,8 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: "adopt" # specify the Java distribution
-          java-version: "11.x"
-      - uses: subosito/flutter-action@v1
+          java-version: "11.x" # specify a version that is available
+      - uses: subosito/flutter-action@v2 # update to v2 to use Node.js 20
         with:
           flutter-version: "2.2.0"
       - run: flutter pub get
